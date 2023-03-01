@@ -2,7 +2,7 @@ export default class HandGestureController {
   #view
   #service
   #camera
-  constructor({ view, service, camera }) {
+  constructor({ camera, view, service }) {
     this.#service = service
     this.#view = view
     this.#camera = camera
@@ -15,7 +15,9 @@ export default class HandGestureController {
   async #estimateHands() {
     try{
       const hands = await this.#service.estimateHands(this.#camera.video)
-      console.log({hands})
+      for await (const {event, x, y} of this.#service.detectGestures(hands)) {
+        console.log({event, x, y})
+      }
     } catch (error) {
       console.error('deu ruim mano', error)
     }
@@ -24,7 +26,7 @@ export default class HandGestureController {
   async #loop() {
     await this.#service.initializeDetector()
     await this.#estimateHands()
-    // this.#view.loop(this.#loop.bind(this))
+    this.#view.loop(this.#loop.bind(this))
   }
   
   static async initialize(deps) {

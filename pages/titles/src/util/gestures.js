@@ -1,10 +1,10 @@
 const { GestureDescription, Finger, FingerCurl }  = window.fp
   
-const ScrollDownGesture = new GestureDescription('scroll-up') // ✊️
-const ScrollUpGesture = new GestureDescription('scroll-down') // 🖐
+const ScrollDownGesture = new GestureDescription('scroll-down') // ✊️
+const ScrollUpGesture = new GestureDescription('scroll-up') // 🖐
 
   
-// Rock
+// Scroll Down ✊️
 // -----------------------------------------------------------------------------
   
 // thumb: half curled
@@ -19,7 +19,7 @@ for(let finger of [Finger.Index, Finger.Middle, Finger.Ring, Finger.Pinky]) {
 }
 
 
-// Paper
+// Scroll Up 🖐
 // -----------------------------------------------------------------------------
   
 // no finger should be curled
@@ -33,8 +33,8 @@ const knownGestures = [
 ]
 
 const gestureStrings = {
-  'scroll-up': '✊️',
-  'scroll-down': '🖐'
+  'scroll-down': '✊️',
+  'scroll-up': '🖐'
 }
 
 export {

@@ -20,8 +20,6 @@ try {
   console.log('error loading model')
 }
 
-
-
 onmessage = async ({ data: video }) => {
   const blinked = await service.handBlinked(video)
   if(!blinked) return;

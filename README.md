@@ -23,7 +23,7 @@ Marque esse projeto com uma estrela 🌟
   - [x] - Deve disparar scroll up quando usar a palma das mãos abertas 🖐
   - [x] - Deve disparar scroll down quando usar a palma das mãos fechadas ✊
   - [x] - Deve disparar click no elemento mais próximo quando usar  gesto de pinça 🤏🏻
-  - [] - Ao mover elementos na tela, deve disparar evento **:hover** em elementos em contexto
+  - [x] - Ao mover elementos na tela, deve disparar evento **:hover** em elementos em contexto
 
 - Video Player
   - [x] - Deve ser possivel de reproduzir ou pausar videos com o piscar de olhos 😁
@@ -35,12 +35,14 @@ Marque esse projeto com uma estrela 🌟
 - [] - Aula 03 - A definir
 - [] - Aula 04 - A definir
 
-### Links mostrados nos aulas:
+### Links mostrados nas aulas:
 - Reuni todos os links em [referências](./referencias.md)
+
 ### Considerações
 - Tire suas dúvidas sobre os desafios em nossa comunidade, o objetivo é você aprender de forma divertida. Surgiu dúvidas? Pergunte por lá!
 
 - Ao completar qualquer um dos desafios, envie no canal **#desafios** da comunidade no **Discord**
+
 ### FAQ
 - browser-sync está lançando erros no Windows e nunca inicializa:
   - Solução: Trocar o browser-sync pelo http-server.
